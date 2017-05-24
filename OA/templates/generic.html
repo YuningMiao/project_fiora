@@ -1,0 +1,467 @@
+﻿{% load staticfiles %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Fordiy Online Assessment</title>
+<link rel="stylesheet" type="text/css" href="{% static 'css/view.css' %}" media="all">
+<script type="text/javascript" src="/static/js/view.js"></script>
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/jquery.countdown.css' %}"> 
+<script type="text/javascript" src="/static/js/jquery.plugin.js"></script> 
+<script type="text/javascript" src="/static/js/jquery.countdown.js"></script>
+
+</head>
+<body id="main_body" >
+	
+	<img id="top" src="/static/image/top.png" alt="">
+	<div id="form_container">
+		
+		<h1><a>Fordiy Online Assessment</a></h1>
+		<form id="form_31837" class="appnitro"  method="post" action="/genericsubmitted/">
+					<div class="form_description">
+			<h2>Fordiy Online Assessment</h2>
+			<p>通用试题</p>
+		<div id="noDays"></div>
+		<script>$('#noDays').countdown({until: '+30m', format: 'HMS'});</script>
+
+				
+			<ul >
+
+{% csrf_token %}
+<li id="li_11" >
+		<label class="description" for="element_11">验证码 </label>
+		<div>
+			<input id="element_11" name="element_11" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_12" >
+		<label class="description" for="element_12">姓名 </label>
+		<div>
+			<input id="element_12" name="element_12" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>
+
+<p>
+<img src="/static/image/Q1-3.PNG" alt="q1 to q3" ></p>			
+
+
+					<li id="li_1" >
+		<label class="description" for="element_1">1题 </label>
+		<div>
+		<select class="element select small" id="element_1" name="element_1"> 
+			<option value="" selected="selected"></option>
+<option selected value="1" >1</option>
+<option value="2" >2</option>
+<option value="3" >3</option>
+<option value="4" >4</option>
+<option value="5" >5</option>
+<option value="6" >6</option>
+<option value="7" >7</option>
+<option value="8" >8</option>
+
+
+
+		</select>
+		</div> 
+		</li>		<li id="li_2" >
+		<label class="description" for="element_2">2题 </label>
+		<div>
+		<select class="element select small" id="element_2" name="element_2"> 
+			<option value="" selected="selected"></option>
+<option selected value="1" >1</option>
+<option value="2" >2</option>
+<option value="3" >3</option>
+<option value="4" >4</option>
+<option value="5" >5</option>
+<option value="6" >6</option>
+<option value="7" >7</option>
+<option value="8" >8</option>
+
+		</select>
+		</div> 
+		</li>		<li id="li_3" >
+		<label class="description" for="element_3">3题 </label>
+		<div>
+		<select class="element select small" id="element_3" name="element_3"> 
+			<option value="" selected="selected"></option>
+<option selected value="1" >1</option>
+<option value="2" >2</option>
+<option value="3" >3</option>
+<option value="4" >4</option>
+<option value="5" >5</option>
+<option value="6" >6</option>
+<option value="7" >7</option>
+<option value="8" >8</option>
+
+		</select>
+		</div> 
+		</li>		
+
+<p>
+<img src="/static/image/Q3-6.png" alt="q3 to q6" ></p>
+<li id="li_4" >
+		<label class="description" for="element_4">4题 </label>
+		<div>
+		<select class="element select small" id="element_4" name="element_4"> 
+			<option value="" selected="selected"></option>
+<option selected value="1" >1</option>
+<option value="2" >2</option>
+<option value="3" >3</option>
+<option value="4" >4</option>
+<option value="5" >5</option>
+<option value="6" >6</option>
+<option value="7" >7</option>
+<option value="8" >8</option>
+
+		</select>
+		</div> 
+		</li>		<li id="li_5" >
+		<label class="description" for="element_5">5题 </label>
+		<div>
+		<select class="element select small" id="element_5" name="element_5"> 
+			<option value="" selected="selected"></option>
+<option selected value="1" >1</option>
+<option value="2" >2</option>
+<option value="3" >3</option>
+<option value="4" >4</option>
+<option value="5" >5</option>
+<option value="6" >6</option>
+<option value="7" >7</option>
+<option value="8" >8</option>
+
+		</select>
+		</div> 
+		</li>		<li id="li_6" >
+		<label class="description" for="element_6">6题 </label>
+		<div>
+		<select class="element select small" id="element_6" name="element_6"> 
+			<option value="" selected="selected"></option>
+<option selected value="1" >1</option>
+<option value="2" >2</option>
+<option value="3" >3</option>
+<option value="4" >4</option>
+<option value="5" >5</option>
+<option value="6" >6</option>
+<option value="7" >7</option>
+<option value="8" >8</option>
+
+		</select>
+		</div> 
+		</li>		
+<p>
+<img src="/static/image/Q6-9.png" alt="q6 to q9" ></p>
+<li id="li_7" >
+		<label class="description" for="element_7">7题 </label>
+		<div>
+		<select class="element select small" id="element_7" name="element_7"> 
+			<option value="" selected="selected"></option>
+<option selected value="1" >1</option>
+<option value="2" >2</option>
+<option value="3" >3</option>
+<option value="4" >4</option>
+<option value="5" >5</option>
+<option value="6" >6</option>
+<option value="7" >7</option>
+<option value="8" >8</option>
+
+		</select>
+		</div> 
+		</li>		<li id="li_8" >
+		<label class="description" for="element_8">8题 </label>
+		<div>
+		<select class="element select small" id="element_8" name="element_8"> 
+			<option value="" selected="selected"></option>
+<option selected value="1" >1</option>
+<option value="2" >2</option>
+<option value="3" >3</option>
+<option value="4" >4</option>
+<option value="5" >5</option>
+<option value="6" >6</option>
+<option value="7" >7</option>
+<option value="8" >8</option>
+
+		</select>
+		</div> 
+		</li>		<li id="li_9" >
+		<label class="description" for="element_9">9题 </label>
+		<div>
+		<select class="element select small" id="element_9" name="element_9"> 
+			<option value="" selected="selected"></option>
+<option selected value="1" >1</option>
+<option value="2" >2</option>
+<option value="3" >3</option>
+<option value="4" >4</option>
+<option value="5" >5</option>
+<option value="6" >6</option>
+<option value="7" >7</option>
+<option value="8" >8</option>
+
+		</select>
+		</div> 
+		</li>		<li id="li_10" >
+		<label class="description" for="element_10">二、对于每道题应当根据你当前的喜欢、倾向与感觉来选择，而不是你认为应该喜欢什么或怎样感觉，喜欢或认可打（√），不喜欢或不认可不打。注意有测谎题目，请真诚作答，如果被检出，成绩作废。好，现在让我们开始吧！ </label>
+		<span>
+			<input id="element_10_1" name="element_10_1" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_1">我喜欢完成具有重大意义的事情</label>
+<input id="element_10_2" name="element_10_2" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_2">我喜欢在某些职业专业或专门项目上自己是公认的权威</label>
+<input id="element_10_3" name="element_10_3" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_3">我喜欢能够自豪地说我将一件难题成功地处理了</label>
+<input id="element_10_4" name="element_10_4" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_4">我喜欢解答其他人觉得很困难的谜语与问题</label>
+<input id="element_10_5" name="element_10_5" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_5">我喜欢完成别人认为需要技巧和努力的工作</label>
+<input id="element_10_6" name="element_10_6" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_6">我喜欢探求伟人对我所感兴趣的各种问题有什么看法</label>
+<input id="element_10_7" name="element_10_7" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_7">我喜欢读伟人的故事</label>
+<input id="element_10_8" name="element_10_8" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_8">我喜欢遵从习俗，并避免做我所尊敬的人认为不合常规的事</label>
+<input id="element_10_9" name="element_10_9" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_9">我喜欢遵照指示去做我所该做的事</label>
+<input id="element_10_10" name="element_10_10" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_10">在团体中，我喜欢接受别人的领导来决定团体该作什么</label>
+<input id="element_10_11" name="element_10_11" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_11">作计划时，我喜欢从其见解为我所尊敬的人那里得到些建议</label>
+<input id="element_10_12" name="element_10_12" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_12">我喜欢接受我所尊敬的人领导</label>
+<input id="element_10_13" name="element_10_13" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_13">我喜欢称赞我所仰慕的人</label>
+<input id="element_10_14" name="element_10_14" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_14">我喜欢我写的所有的东西都很精确、清楚、有条有理</label>
+<input id="element_10_15" name="element_10_15" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_15">对我所承担的任何工作，我喜欢对其细节作好计划与组织</label>
+<input id="element_10_16" name="element_10_16" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_16">我喜欢遵从指示做我所该做的事</label>
+<input id="element_10_17" name="element_10_17" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_17">我喜欢在工作开始之前对工作做好组织和计划</label>
+<input id="element_10_18" name="element_10_18" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_18">假如我必须旅行时，我喜欢把事情事先安排好</label>
+<input id="element_10_19" name="element_10_19" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_19">我喜欢将我开了头的工作或任务完成</label>
+<input id="element_10_20" name="element_10_20" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_20">我喜欢保持我的书桌或工作间的清洁与整齐</label>
+<input id="element_10_21" name="element_10_21" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_21">我喜欢饮食有规律，并且有固定时间吃东西</label>
+<input id="element_10_22" name="element_10_22" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_22">我喜欢将我的信、帐单和其他文件整齐地排列着并以某种系统存档</label>
+<input id="element_10_23" name="element_10_23" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_23">我喜欢在宴会上讲些趣事与笑话</label>
+<input id="element_10_24" name="element_10_24" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_24">在公共场合中，我喜欢人们注意和评价我的外表</label>
+<input id="element_10_25" name="element_10_25" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_25">我喜欢提出明知没有人能回答得出来的问题</label>
+<input id="element_10_26" name="element_10_26" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_26">我喜欢说别人认为机智与聪明的事</label>
+<input id="element_10_27" name="element_10_27" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_27">我喜欢在团体中成为众目所瞩的对象</label>
+<input id="element_10_28" name="element_10_28" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_28">我喜欢用些别人常常不明白其意义的字眼</label>
+<input id="element_10_29" name="element_10_29" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_29">我喜欢对别人谈我所经历的冒险与奇特的事</label>
+<input id="element_10_30" name="element_10_30" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_30">我有时喜欢做些事，只为了想看别人对此事的反应</label>
+<input id="element_10_31" name="element_10_31" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_31">我喜欢谈我的成就</label>
+<input id="element_10_32" name="element_10_32" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_32">我喜欢能随我的意志来去自如</label>
+<input id="element_10_33" name="element_10_33" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_33">我喜欢很自如地做我想做的事</label>
+<input id="element_10_34" name="element_10_34" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_34">我希望独立决定我要做的事</label>
+<input id="element_10_35" name="element_10_35" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_35">我喜欢批判权威人士</label>
+<input id="element_10_36" name="element_10_36" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_36">我喜欢回避责任与义务</label>
+<input id="element_10_37" name="element_10_37" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_37">我喜欢表达我对事情的看法</label>
+<input id="element_10_38" name="element_10_38" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_38">我喜欢做些别人认为不合常规的事</label>
+<input id="element_10_39" name="element_10_39" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_39">我喜欢避免需要依常规做事的场合</label>
+<input id="element_10_40" name="element_10_40" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_40">我喜欢依我的方式做事而不在乎别人的看法</label>
+<input id="element_10_41" name="element_10_41" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_41">我喜欢结交新朋友</label>
+<input id="element_10_42" name="element_10_42" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_42">我喜欢与朋友有深厚的友谊</label>
+<input id="element_10_43" name="element_10_43" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_43">我喜欢广交朋友</label>
+<input id="element_10_44" name="element_10_44" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_44">我喜欢写信给我的朋友</label>
+<input id="element_10_45" name="element_10_45" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_45">我喜欢与朋友分享一切</label>
+<input id="element_10_46" name="element_10_46" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_46">我喜欢为我的朋友做事</label>
+<input id="element_10_47" name="element_10_47" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_47">我喜欢对我的朋友们忠诚</label>
+<input id="element_10_48" name="element_10_48" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_48">我喜欢参与那些成员之间具有温暖与友善情感的团体</label>
+<input id="element_10_49" name="element_10_49" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_49">我比较喜欢与朋友共事而不喜欢独自工作</label>
+<input id="element_10_50" name="element_10_50" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_50">我喜欢就一个人为什么那样做去判断他，而不从他实际上做什么去判断他</label>
+<input id="element_10_51" name="element_10_51" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_51">我喜欢了解我的朋友们在面临各种问题时的感觉</label>
+<input id="element_10_52" name="element_10_52" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_52">我喜欢研究与分析别人的行为</label>
+<input id="element_10_53" name="element_10_53" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_53">我喜欢将自己放在别人的立场上，看自己若处在相同的情境会有什么感觉</label>
+<input id="element_10_54" name="element_10_54" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_54">我喜欢分析我自己的动机与情感</label>
+<input id="element_10_55" name="element_10_55" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_55">我喜欢预测我的朋友们在各种情况下的反应</label>
+<input id="element_10_56" name="element_10_56" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_56">我喜欢观察别人在某些情况下的感觉</label>
+<input id="element_10_57" name="element_10_57" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_57">我喜欢观察我的朋友们的性格并尝试找出使他们成为这样的原因</label>
+<input id="element_10_58" name="element_10_58" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_58">我喜欢我的朋友对我仁慈</label>
+<input id="element_10_59" name="element_10_59" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_59">当我受伤或生病时，我喜欢我的朋友为此小题大作</label>
+<input id="element_10_60" name="element_10_60" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_60">当我有麻烦时，我喜欢我的朋友帮助我</label>
+<input id="element_10_61" name="element_10_61" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_61">我喜欢我的朋友们对我有深情</label>
+<input id="element_10_62" name="element_10_62" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_62">当我生病时，我喜欢朋友们为我感伤</label>
+<input id="element_10_63" name="element_10_63" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_63">我喜欢我的朋友高兴地为我办点小事</label>
+<input id="element_10_64" name="element_10_64" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_64">当我沮丧时，我喜欢我的朋友们同情我，并使我愉快</label>
+<input id="element_10_65" name="element_10_65" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_65">当我失败时，我喜欢我的朋友们鼓励我</label>
+<input id="element_10_66" name="element_10_66" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_66">当我有问题时，我喜欢我的朋友们能同情与了解</label>
+<input id="element_10_67" name="element_10_67" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_67">当作为群众团体的一个成员时，我喜欢被指定或选为领导者</label>
+<input id="element_10_68" name="element_10_68" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_68">只要可能，我喜欢监督与指导别人的行动</label>
+<input id="element_10_69" name="element_10_69" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_69">我喜欢成为我所属的机构与团体的领导之一</label>
+<input id="element_10_70" name="element_10_70" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_70">我喜欢告诉别人怎么做他们的工作</label>
+<input id="element_10_71" name="element_10_71" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_71">我喜欢被人们叫去做和事佬</label>
+<input id="element_10_72" name="element_10_72" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_72">当我的观点被攻击时，我喜欢为之辩护</label>
+<input id="element_10_73" name="element_10_73" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_73">我喜欢能说服与影响其他人去做他们的工作</label>
+<input id="element_10_74" name="element_10_74" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_74">在团体中，我喜欢决定我们该做什么</label>
+<input id="element_10_75" name="element_10_75" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_75">我喜欢被人当作领导</label>
+<input id="element_10_76" name="element_10_76" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_76">每当我做错了事，我感到有罪恶感</label>
+<input id="element_10_77" name="element_10_77" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_77">我觉得我必须承认我所做的一些错事</label>
+<input id="element_10_78" name="element_10_78" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_78">我觉得样样不如人</label>
+<input id="element_10_79" name="element_10_79" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_79">在我认为是我上司的人面前，我感到胆怯</label>
+<input id="element_10_80" name="element_10_80" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_80">我知道自己做错了些事时会感到内疚</label>
+<input id="element_10_81" name="element_10_81" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_81">由于自己无能力处理各种情况使我感到沮丧</label>
+<input id="element_10_82" name="element_10_82" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_82">当我退让或避免争执时，我感到比争取达到目的时还好些</label>
+<input id="element_10_83" name="element_10_83" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_83">当我做错事时，我觉得我比任何人都更该受到责备</label>
+<input id="element_10_84" name="element_10_84" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_84">我觉得我所受的痛苦与不幸是好处多于坏处</label>
+<input id="element_10_85" name="element_10_85" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_85">我喜欢帮助比我不幸的人</label>
+<input id="element_10_86" name="element_10_86" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_86">我喜欢对朋友们慷慨</label>
+<input id="element_10_87" name="element_10_87" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_87">我喜欢为我的朋友做点小事</label>
+<input id="element_10_88" name="element_10_88" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_88">我喜欢我的朋友信任我，并对我倾诉他们的麻烦</label>
+<input id="element_10_89" name="element_10_89" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_89">我喜欢原谅有时可能伤害了我的朋友</label>
+<input id="element_10_90" name="element_10_90" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_90">当我的朋友有麻烦时，我喜欢帮助他们</label>
+<input id="element_10_91" name="element_10_91" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_91">当我的朋友受伤时，我喜欢同情他们</label>
+<input id="element_10_92" name="element_10_92" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_92">我喜欢待人以仁慈与同情</label>
+<input id="element_10_93" name="element_10_93" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_93">我喜欢对我的朋友表示自己的深情</label>
+<input id="element_10_94" name="element_10_94" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_94">我喜欢在新奇的餐厅里吃饭</label>
+<input id="element_10_95" name="element_10_95" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_95">我喜欢旅行和到处观光</label>
+<input id="element_10_96" name="element_10_96" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_96">我喜欢搬家，住在不同的地方</label>
+<input id="element_10_97" name="element_10_97" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_97">我喜欢做些新鲜且有变化的事</label>
+<input id="element_10_98" name="element_10_98" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_98">我喜欢试验与尝试新东西</label>
+<input id="element_10_99" name="element_10_99" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_99">我喜欢尝试新职业，而不喜欢一直做同样的老事情</label>
+<input id="element_10_100" name="element_10_100" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_100">我喜欢见些原来不熟悉的人</label>
+<input id="element_10_101" name="element_10_101" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_101">我喜欢在日常生活中经历新奇与变迁</label>
+<input id="element_10_102" name="element_10_102" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_102">我喜欢追求新潮流与时髦</label>
+<input id="element_10_103" name="element_10_103" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_103">对我所承担的事，我喜欢认真去做</label>
+<input id="element_10_104" name="element_10_104" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_104">我喜欢在接受其他事之前完成手头的事</label>
+<input id="element_10_105" name="element_10_105" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_105">我喜欢继续解我的难题或问题，直到解决为止</label>
+<input id="element_10_106" name="element_10_106" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_106">我喜欢固定在某一职业或问题上，甚至看来它好象没有什么希望</label>
+<input id="element_10_107" name="element_10_107" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_107">我喜欢不受干扰地长时间工作</label>
+<input id="element_10_108" name="element_10_108" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_108">当我工作时，我喜欢避开干扰</label>
+<input id="element_10_109" name="element_10_109" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_109">我喜欢熬夜将工作完成</label>
+<input id="element_10_110" name="element_10_110" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_110">我喜欢长时间地工作而不受别人干扰</label>
+<input id="element_10_111" name="element_10_111" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_111">我喜欢将我开了头的任何事情或工作完成</label>
+<input id="element_10_112" name="element_10_112" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_112">假如某人罪有应得的话我想公开的进行批评</label>
+<input id="element_10_113" name="element_10_113" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_113">当我动怒时，我想摔东西</label>
+<input id="element_10_114" name="element_10_114" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_114">我喜欢对别人说我对他们的看法</label>
+<input id="element_10_115" name="element_10_115" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_115">我想取笑那些我认为他们行为愚蠢的人</label>
+<input id="element_10_116" name="element_10_116" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_116">我喜欢攻击与我观点相反的看法</label>
+<input id="element_10_117" name="element_10_117" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_117">当事情不顺时，我想责怪别人</label>
+<input id="element_10_118" name="element_10_118" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_118">当有人侮辱我时，我想报复</label>
+<input id="element_10_119" name="element_10_119" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_10_119">当我不赞同他们的看法时，我喜欢说服他们</label>
+
+		</span> 
+		</li>
+
+<script type="text/javascript"> alert("You have 30 mins before we automatically submit your answers, good luck."); </script>
+			
+					<li class="buttons">
+			    <input type="hidden" name="form_id" value="31837" />
+			    
+				<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+		</li>
+			</ul>
+		</form>	
+		<div id="footer">
+			
+		</div>	
+			Generated by <a href="http://www.phpform.org">pForm</a>
+		</div>
+	</div>
+	<img id="/static/image/bottom" src="bottom.png" alt="">
+	</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<intercept-url pattern="/favicon.ico" access="ROLE_ANONYMOUS" />
+<meta charset="UTF-8">
+<meta name="welcome page" content="test selection">
+<html>
+<head>
+    <title>OfferComes Online Assessment</title>
+</head>
+<title></title>
+<body>
+Welcome to the Fordiy talent acquisition online assessment system, pick one of tests that you need and good luck. <p>
+<a href="{% url 'generic' %}">通用部分</a>
+<a href="{% url 'customerservice' %}">文案部分</a>
+<a href="{% url 'consultencyservice' %}">咨询部分</a>
+</body>
+</html>
+
